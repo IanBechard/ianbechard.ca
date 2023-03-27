@@ -1,0 +1,27 @@
+.header{
+    padding: 5px;
+    height: 70px;
+    background-color: rgb(var(--callout-border-rgb));
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoGroup {
+    padding: 15px;
+    display: inline-block;
+}
+
+.linkList {
+    padding: 10px;
+    display:inline-block;
+}
+
+.link {
+    padding: 1vmax;
+}
+
+.link:hover {
+    color: cyan;
+}

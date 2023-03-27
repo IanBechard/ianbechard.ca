@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
+import styles from './navbar.module.css';
+import logo from "src/app/favicon.ico"
 
 class Route {
     title: string;
@@ -19,9 +22,15 @@ const ROUTES_LIST:Route[] = [
 
 export default function Navbar() {
     return(
-        <header>
+        <header className={styles.header}>
+            <div className={styles.logoGroup}>
+                <Image src={logo} alt={"logo"}></Image>
+                <h1 className={styles.logoGroup}>ianbechard.ca</h1>
+            </div>
             <nav>
-                {ROUTES_LIST.map(route => (<Link key={route.title} href={route.href}>{route.title}</Link>))}
+                <ul className={styles.linkList}>
+                    {ROUTES_LIST.map(route => (<Link className={styles.link} key={route.title} href={route.href}>{route.title}</Link>))}
+                </ul>
             </nav>
         </header>
     );
