@@ -1,0 +1,14 @@
+.btn {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }

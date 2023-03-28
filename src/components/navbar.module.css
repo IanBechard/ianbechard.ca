@@ -1,7 +1,8 @@
 .header{
     padding: 5px;
     height: 70px;
-    background-color: rgb(var(--callout-border-rgb));
+    color: var(--text-color);
+    background-color: var(--accent-color);
     display: flex;
     box-sizing: border-box;
     align-items: center;
@@ -15,7 +16,7 @@
 
 .linkList {
     padding: 10px;
-    display:inline-block;
+    display: flex;
 }
 
 .link {
@@ -23,5 +24,5 @@
 }
 
 .link:hover {
-    color: cyan;
+    color: var(--link-color);
 }

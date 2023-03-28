@@ -1,7 +1,10 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
 import styles from './navbar.module.css';
 import logo from "src/app/favicon.ico"
+import DarkModeButton from "./darkModeButton";
 
 class Route {
     title: string;
@@ -27,11 +30,14 @@ export default function Navbar() {
                 <Image src={logo} alt={"logo"}></Image>
                 <h1 className={styles.logoGroup}>ianbechard.ca</h1>
             </div>
+            <div className={styles.linkList}>
             <nav>
                 <ul className={styles.linkList}>
                     {ROUTES_LIST.map(route => (<Link className={styles.link} key={route.title} href={route.href}>{route.title}</Link>))}
                 </ul>
             </nav>
+            <DarkModeButton/>
+            </div>
         </header>
     );
 }
