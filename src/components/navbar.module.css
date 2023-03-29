@@ -9,9 +9,14 @@
     justify-content: space-between;
 }
 
+.logo{
+    transform: scale(2);
+}
+
 .logoGroup {
     padding: 15px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .linkList {
