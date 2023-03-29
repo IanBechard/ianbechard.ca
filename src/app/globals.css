@@ -9,15 +9,15 @@
     --background-color: #ebe5e5;
     --text-color: #000000;
     --link-color: #1976D2;
-    --accent-color: #FFB900;
+    --accent-color: #838383;
 }
 
 .darkMode {
   color-scheme: dark;
   --background-color: #202124;
   --text-color: #E0E0E0;
-  --link-color: #4DB6AC;
-  --accent-color: #FFB900;
+  --link-color: #1976D2;
+  --accent-color: #2e1534;
 }
 
 * {

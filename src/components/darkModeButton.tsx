@@ -1,6 +1,8 @@
 'use client'
 
 import styles from "./darkModeButton.module.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons"
 import React, { useEffect, useState } from 'react';
 
 export default function DarkModeButton(){
@@ -32,7 +34,8 @@ export default function DarkModeButton(){
 
     return (
         <button className={styles.btn} onClick={handleToggle}>
-            {darkMode ? 'Light Mode' : 'Dark Mode'}
+            {darkMode ? <FontAwesomeIcon icon={faMoon} className={styles.icon} /> : 
+                        <FontAwesomeIcon icon={faSun} className={styles.icon} />}
         </button>
     );
 };
